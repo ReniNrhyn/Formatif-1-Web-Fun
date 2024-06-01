@@ -1,0 +1,150 @@
+<!-- Reni Nurhayani -->
+<!-- MI23B -->
+<!-- Manajemen Informatika -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tiket</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="src/output.css" rel="stylesheet" />
+    <style>
+      .bg-ticket {
+        background-image: url('src/img/bg-ticket.png');
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .bg-rotate {
+        rotate: 90deg;
+        width: 180px;
+        margin-top: 70px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-500 m-12">
+    <section>
+      <!-- Header -->
+      <div class="bg-orange-500 text-white p-6 rounded-t-xl text-xl font-bold">
+        <div class="flex justify-between">
+          <p>FORM DATA TIKET</p>
+          <img src="src/img/plane-white.png" alt="logo-pesawat" width="55px" />
+        </div>
+      </div>
+      <!-- Body -->
+      <div class="bg-white p-6 rounded-b-xl">
+        <form class="w-full mx-auto">
+          <!-- Baris ke 1 -->
+          <div class="flex gap-5">
+            <div class="w-full mb-5">
+              <label for="Flight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Flight<span class="text-red-600">*</span></label>
+              <input type="text" id="Flight" placeholder="Flight Here...." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required autocapitalize="off" />
+            </div>
+            <div class="w-full mb-5">
+              <label for="from" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Form<span class="text-red-600">*</span></label>
+              <input type="text" id="from" placeholder="Location From Here...." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required autocapitalize="off"/>
+            </div>
+            <div class="w-full mb-5">
+              <label for="to" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">To<span class="text-red-600">*</span></label>
+              <input type="text" id="to" placeholder="Location To Here...." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required autocapitalize="off" />
+            </div>
+          </div>
+          <!-- Baris ke 2 -->
+          <div class="flex gap-5">
+            <div class="w-full mb-5">
+              <label for="terminal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Terminal<span class="text-red-600">*</span></label>
+              <input type="text" id="terminal" placeholder="Terminal Here...." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required autocapitalize="off" />
+            </div>
+            <div class="w-full mb-5">
+              <label for="passenger" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Passenger<span class="text-red-600">*</span></label>
+              <input type="text" id="passenger" placeholder="Passenger Here...." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required autocapitalize="off" />
+            </div>
+            <div class="w-full mb-5">
+              <label for="date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date<span class="text-red-600">*</span></label>
+              <input type="date" id="date" placeholder="name@flowbite.com" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required autocapitalize="off" />
+            </div>
+            <div class="w-full mb-5">
+              <label for="time" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Boarding Time<span class="text-red-600">*</span></label>
+              <input type="time" id="time" placeholder="-:-" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required autocapitalize="off" />
+            </div>
+            <div class="w-full mb-5">
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Seat<span class="text-red-600">*</span></label>
+              <input type="seat" id="email" placeholder="Seat Here...." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required autocapitalize="off"/>
+            </div>
+          </div>
+          <!-- Button Sumbit -->
+          <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Boarding Pass -->
+    <section id="form_boarding_pass" style="margin-top: 50px">
+      <!-- Header -->
+      <div class="flex justify-between w-full">
+        <div class="bg-orange-500 w-full text-white p-4 rounded-t-xl text-xl font-bold">BOARDING PASS</div>
+        <div class="bg-orange-500 w-1/2 text-white p-4 rounded-t-xl text-xl font-bold"></div>
+      </div>
+      <!-- Body -->
+      <div class="bg-ticket p-6">
+        <div class="flex">
+          <!-- 1 -->
+          <div>
+            <div class="flex">
+              <div class="ms-5 w-full">
+                <p class="text-orange-500 font-bold text-xl">FLIGHT 1245</p>
+                <p>From <span class="font-bold">Tasikmalaya</span> to <span class="font-bold">Bandung</span></p>
+              </div>
+              <div class="w-full">
+                <img src="src/img/barcode 1.png" alt="barcode" />
+              </div>
+            </div>
+            <div class="ms-5">
+              <p class="text-orange-500 font-bold text-xl">TERMINAL 1</p>
+              <p>Gate <span class="font-bold">15</span></p>
+            </div>
+            <div class="flex mt-2 ms-5">
+              <div class="w-full">
+                <p class="text-orange-500 font-bold text-xl">Passenger</p>
+                <p class="font-bold">Lorem, ipsum</p>
+              </div>
+              <div class="w-full">
+                <p class="text-orange-500 font-bold text-xl">Date</p>
+                <p class="font-bold">11 March 2024</p>
+              </div>
+              <div class="w-full">
+                <p class="text-orange-500 font-bold text-xl">Boarding Time</p>
+                <p class="font-bold">12.10</p>
+              </div>
+              <div class="w-full">
+                <p class="text-orange-500 font-bold text-xl">Seat</p>
+                <p class="font-bold">8A</p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div>
+            <div class="flex">
+              <div class="w-full text-right">
+                <img src="src/img/barcode 1.png" class="bg-rotate inline-block" alt="Barcode" />
+              </div>
+              <div class="w-full">
+                <p class="text-orange-500 font-bold text-xl">FLIGHT 1245</p>
+                <p>From <span class="font-bold">Tasikmalaya</span> to <span class="font-bold">Bandung</span></p>
+                <p class="text-orange-500 font-bold text-xl">TERMINAL 1</p>
+                <p>Gate <span class="font-bold">15</span></p>
+                <p class="text-orange-500 font-bold text-xl">Passenger</p>
+                <p class="font-bold">Lorem, ipsum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="flex justify-between">
+        <div class="bg-orange-500 w-full text-white p-6 rounded-t-xl text-xl font-bold transform rotate-180"></div>
+        <div class="bg-orange-500 w-1/2 text-white p-6 rounded-t-xl text-xl font-bold transform rotate-180"></div>
+      </div>
+    </section>
+  </body>
+</html>
